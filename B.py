@@ -47,8 +47,8 @@ vuln = '\x1b[32mVuln'
 
 
 
-    print '1. Hack Akun Facebook'
-    print '0. Keluar            '
+    print 1. Hack Akun Facebook
+    print 0. Keluar            
     print
     pilih()
     
