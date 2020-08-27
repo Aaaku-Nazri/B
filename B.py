@@ -46,42 +46,23 @@ vulnot = '\x1b[31mNot Vuln'
 vuln = '\x1b[32mVuln'
 
 
-def login():
-    os.system('clear')
-    try:
-        toket = open('login.txt', 'r')
-        menu()
-    except (KeyError, IOError):
-        os.system('clear')
-    print logo
-    print '\x1b[1;97m\xe2\x95\x94' + 40 * '\xe2\x95\x90'
-    print '\xe2\x95\x91\x1b[1;91m[\x1b[1;96m\xe2\x9c\x93\x1b[1;91m]\x1b[1;97m Nama \x1b[1;91m: \x1b[1;92m' + nama
-    print '\x1b[1;97m\xe2\x95\x9a' + 40 * '\xe2\x95\x90'
-    print '\x1b[1;37;40m1. Hack Akun Facebook'
-    print '\x1b[1;37;40m2. Bot               '
-    print '\x1b[1;37;40m3. Lainnya....       '
-    print '\x1b[1;31;40m0. Keluar            '
+
+    print '1. Hack Akun Facebook'
+    print '0. Keluar            '
     print
     pilih()
     
     def pilih():
-    zedd = raw_input('\x1b[1;91m-\xe2\x96\xba\x1b[1;97m ')
+    zedd = raw_input()
     if zedd == '':
-        print '\x1b[1;91m[!] Jangan kosong'
+        print 'Jangan kosong'
         pilih()
     else:
             if zedd == '1':
                 menu_hack()
             else:
-                if zedd == '2':
-                    menu_bot()
-                else:
-                    if zedd == '3':
-                        lain()
-                    else:
-                        else:
-                            if zedd == '0':
-                                keluar()
+                  if zedd == '0':
+                      keluar()
                             else:
                                 print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + zedd + ' \x1b[1;91mTidak ada'
                                 pilih()
